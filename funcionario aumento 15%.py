@@ -1,0 +1,6 @@
+print('='*25)
+print('======== salário ========')
+salario = float(input('Digite seu salário: '))
+novo = salario + (salario * 15 / 100)
+print('O valor do aumento é de 5% \nO novo salário é: R$ {:.2f}'.format(novo))
+print('='*25)
