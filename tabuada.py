@@ -1,0 +1,17 @@
+soma = int(input('Digite o numero da tabuada: '))
+
+print('*********TABUADA*********'.format(soma))
+print('>>>>>>     {}     <<<<<<'.format(soma))
+print('*************************')
+print('{}  x  1  =  {}'.format(soma, soma*1))
+print('{}  x  2  =  {}'.format(soma, soma*2))
+print('{}  x  3  =  {}'.format(soma, soma*3))
+print('{}  x  4  =  {}'.format(soma, soma*4))
+print('{}  x  5  =  {}'.format(soma, soma*5))
+print('{}  x  6  =  {}'.format(soma, soma*6))
+print('{}  x  7  =  {}'.format(soma, soma*7))
+print('{}  x  8  =  {}'.format(soma, soma*8))
+print('{}  x  9  =  {}'.format(soma, soma*9))
+print('{}  x 10  =  {}'.format(soma, soma*10))
+
+print('=' *25)
