@@ -12,6 +12,7 @@ class Carro:
         estado= "S" if self.ligado else "N"
         print("Ligado-----------:" + estado)
         print("_______________________________________")
+        
     def ligar(self):
         self.ligado=True
     def desligar(self):
@@ -21,8 +22,6 @@ class Carro:
             print("Em Movimento")
         else:
             print("Carro desligado")
-
-
 
 c1=Carro(200,False,"Preto")
 c2=Carro(120,False,"Branco")
