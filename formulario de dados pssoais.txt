@@ -1,0 +1,65 @@
+# https://www.youtube.com/watch?v=9eqAxOqRcJo
+# 010 Python Tkinter Alterando tios de letras e fontes
+# https://www.youtube.com/watch?v=Gg_BsA_FlJo
+# 011 - Python tkinter - DEFINIR LARGURA DE UM LABEL E IMPLICAÇÕES
+
+from tkinter import *
+
+def most():
+    print("Nome:.........%s" % ed.get())
+    print("sobre nome:...%s" % v_sb.get())
+    print("e-mail:.......%s" % v_mail.get())
+    print("celular:......%s" % v_cel.get())
+    print("Data Nasc.:...%s" % v_data.get())
+    print("Obs:..........%s" % obs.get(1.0, END))
+
+
+root = Tk()
+root.title("Kamisaria Zanuto")
+root.geometry("300x350+200+200")
+root["bg"] = "#deb887"
+
+
+v_relief = Label(root, relief="solid", bg="#deb887", bd=1, width=5, height=2)
+v_relief.place(x=12, y=4)
+
+v_img = PhotoImage(file="logok.png")
+Label(root, image=v_img, height=28, width=34).place(x=13, y=4)
+
+vp_d = Label(root, text="Preencha seus dados", font="times 15 bold italic", bg="#deb887", fg="red")
+vp_d.place(x=65, y=10)
+
+v_nome = Label(root, width=4, text=" nome ", bg="#deb887", font=" bold 10 bold italic", )
+v_nome.place(x=10, y=40)
+ed = Entry(root)
+ed.place(x=10, y=60, width=120, height=22)
+
+vs_b = Label(root, width=10, text="sobre nome", bg="#deb887", font="bold 10 bold italic")
+vs_b.place(x=135, y=40)
+v_sb = Entry(root)
+v_sb.place(x=135, y=60, width=155, height=22)
+
+v_mail = Label(root, width=10, text="e-mail", bg="#deb887", font="bold 10 bold italic")
+v_mail.place(x=-12, y=85)
+v_mail = Entry(root)
+v_mail.place(x=10, y=105, width=280, height=22)
+
+v_cel = Label(root, text="celuar", bg="#deb887", font="bold 10 bold italic")
+v_cel.place(x=10, y=130)
+v_cel = Entry(root)
+v_cel.place(x=12, y=150, width=120, height=22)
+
+v_data = Label(root, text="data nasc.", bg="#deb887", font="bold 10 bold italic")
+v_data.place(x=135, y=130)
+v_data = Entry(root)
+v_data.place(x=137, y=150, width=155, height=22)
+
+Label(root, text="Obs:.", bg="#deb887", font="bold 10 bold italic", anchor=W).place(x=10, y=175, width=50, height=20)
+obs=Text(root)
+obs.place(x=10, y=195, width=280, height=80)
+
+Button(root, width=10, text="Enviar Dados", bg="gray", fg="black", command=most).place(x=10, y=320)
+
+Button(root, width=10, text="Cancelar", bg="gray", fg="black").place(x=100, y=320)
+
+root.mainloop()
