@@ -1,0 +1,23 @@
+from tkinter import *
+
+root = Tk()
+root.title("Login")
+root.geometry("200x80")
+
+def most():
+    print("Login:....%s" % v_use.get())
+    print("Senha:....%s" % v_sen.get())
+    
+
+Label(root, text="Usuário:").grid(row=0, sticky=W)
+
+Label(root, text="Senha:").grid(row=1, sticky=W)
+
+v_use = Entry().grid(row=0, column=1, sticky=E)
+v_sen = Entry().grid(row=1, column=1, sticky=E)
+
+v_log = Button(root, text="Login", font="times 10", fg="black", 
+               command=most).grid(row=2, column=1, sticky=E)
+
+
+root.mainloop()
