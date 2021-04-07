@@ -1,3 +1,0 @@
-import sqlite3
-
-banco = sqlite.connect('primeiro_banco.db)
