@@ -34,7 +34,7 @@ screen1 = StringVar(root)
 lb = LabelFrame(root, text="Indice de massa corporal",fg="gray", borderwidth=1, relief="sunken", bg="#ffffb3")
 lb.place(x=10, y=30, width=480, height=150)
 
-lb1 = LabelFrame(root, text="Resultado de sua pesquisa", fg="gray", borderwidth=1, relief="solid")
+lb1 = LabelFrame(root, text="Resultado de sua pesquisa", fg="gray", borderwidth=1, relief="sunken")
 lb1.place(x=10, y=190, width=480, height=100)
 
 
