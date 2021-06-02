@@ -1,3 +1,6 @@
+#https://www.youtube.com/watch?v=25aSCfcHRME
+#https://www.youtube.com/watch?v=0WRMYdOwHYE
+
 from tkinter import *
 from tkinter.ttk import *
 
@@ -11,24 +14,24 @@ def start():
         bar['value'] +=(speed/GB)*100
         download+=speed
         percent.set(str(int((download/GB)*100))+"%")
-        text.set(str(download)+"/"+str(GB)+" tasks completed")
-        window.update_idletasks()
+        text.set(str(download)+"/"+str(GB)+" tarefa completeda")
+        root.update_idletasks()
 
-window = Tk()
+root = Tk()
 
 percent = StringVar()
 text = StringVar()
 
-bar = Progressbar(window, orient=HORIZONTAL, length=300)
+bar = Progressbar(root, orient=HORIZONTAL, length=300)
 bar.pack(pady=10)
 
-percentLabel = Label(window, textvariable=percent).pack()
-taskLabel = Label(window, textvariable=text).pack()
+percentLabel = Label(root, textvariable=percent).pack()
+taskLabel = Label(root, textvariable=text).pack()
 
-button = Button(window, text="download", command=start).pack()
+button = Button(root, text="download", command=start).pack()
 
 
-window.mainloop()
+root.mainloop()
 
 
 
